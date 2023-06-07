@@ -1,0 +1,126 @@
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+
+.header .logo {
+    position: relative;
+}
+
+.header .logo div {
+    width: 75px;
+    height: 75px;
+    background-image: url('../assets/imgPerroconLentes.jpg');
+    background-size: contain;
+    border-radius: 50%;
+}
+
+.header .navActive {
+    position: relative;
+    display: flex;
+    gap: 40px;
+}
+
+.header .navActive li {
+    list-style: none;
+}
+
+.header .navActive li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.header .navActive li a:hover::after {
+    content: '';
+    width: 30%;
+    height: 2px;
+    background-color: #e58843;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+
+.header .navActive li.active a,
+.header .navActive li:hover a {
+    color: #e58843;
+}
+
+.menuToggle {
+    
+    display: none;
+}
+
+.menuToggle i{
+    color: #fff;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.5em;   
+}
+
+@media (max-width: 768px) {
+    .header .nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            position: fixed;
+            top: 70px;
+            right: 0px;
+            width: 150px;
+            height: 100vh;
+            /* background: #e58843; */
+            padding: 10px 0 0 10px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .header .nav li {
+            list-style: none;
+        }
+
+        .header .nav li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .header .nav li a:hover::after {
+            content: '';
+            width: 30%;
+            height: 2px;
+            background-color: #e58843;
+            position: absolute;
+            bottom: -4px;
+            left: 20px;
+
+        }
+
+        .header .nav li.active a,
+        .header .nav li:hover a {
+            color: #e58843;
+        }
+
+        .header .navActive{
+            display: none;
+        }
+
+        .menuToggle {
+    
+            display: block;
+        }
+
+        .menuToggle i {
+            cursor: pointer;
+        }
+}

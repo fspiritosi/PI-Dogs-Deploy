@@ -1,0 +1,63 @@
+.cards_container {
+    padding: 30px 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 25px 15px;
+    width: 100%;
+}
+
+
+.paginateContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.listPageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.listPageContainer button {
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    background-color: #fff;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border: none;
+    box-shadow: 3px 5px 10px rgba(0,0,0,0.8);
+}
+
+.listPageContainer .activePage {
+    background-color: #E58843;
+    
+
+}
+
+@media (max-width:  768px) {
+    .cards_container {
+           
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            gap: 25px 15px;
+            width: 100%;
+        }
+}
+
+@media (max-width: 425px) {
+    .cards_container {
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        gap: 25px 15px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,44 @@
+.btnInfo {
+    position: relative;
+        padding: 15px 35px;
+        background: #2196f3;
+        color: #fff;
+        border: none;
+        outline: none;
+        font-size: 1.25em;
+        letter-spacing: 0.05em;
+        border-radius: 4px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.5s;
+}
+
+.btnSuccesses {
+    position: relative;
+    padding: 15px 35px;
+    background: #269410;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btnDanger {
+    position: relative;
+    padding: 15px 35px;
+    background: #9e1414;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}

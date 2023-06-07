@@ -1,0 +1,7 @@
+
+.App {
+    /* background-color: #0C395A; */
+    /* background-color: #202020; */
+    background-image: url('./assets/backgroundImg.jpg');
+    background-size: cover;
+}

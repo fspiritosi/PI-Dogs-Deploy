@@ -1,0 +1,23 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.headerContainer{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    
+}
+
+.cardContainer{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
