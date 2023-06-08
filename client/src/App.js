@@ -6,6 +6,10 @@ import Detail from "./pages/Detail";
 import Form from "./pages/Form";
 import Notfound from "./pages/Notfound";
 
+import axios from 'axios'
+axios.defaults.baseURL = 'http://localhost:3005'
+
+
 function App() {
 
   return (

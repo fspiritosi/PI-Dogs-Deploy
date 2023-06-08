@@ -10,40 +10,38 @@ import {
   RESET_DOG
 } from "./types.js";
 
+import axios from 'axios'
 
 export const getAllDogs = () => async (dispatch) => {
-    const resp = await fetch('http://localhost:3001/dogs')
-    const data = await resp.json()
+    const resp = await axios.get('/dogs')
+    
     dispatch({
         type: GET_DOGS,
-        payload: data
+        payload: resp.data
     })
 }
 
 export const getTemperaments = () => async (dispatch) => {
-    const resp = await fetch('http://localhost:3001/temperaments')
-    const data = await resp.json()
+    const resp = await axios.get('/temperaments')
     dispatch({
         type: GET_TEMPERAMENTS,
-        payload: data
+        payload: resp.data
         })
 }
 
 export const getDogsByName = (name) => async (dispatch) => {
-    const resp = await fetch(`http://localhost:3001/dogs?name=${name}`);
-    const data = await resp.json()
+    const resp = await axios.get(`/dogs?name=${name}`);
     dispatch({
       type: GET_DOGS_BY_NAME,
-      payload: data
+      payload: resp.data
     });
 }
 
 export const getDogById = (id) => async(dispatch) => {
-    const resp = await fetch(`http://localhost:3001/dogs/${id}`);
-    const data = await resp.json()
+    const resp = await axios.get(`/dogs/${id}`);
     dispatch({
         type: GET_DOG,
-        payload: data
+        payload: resp.data
     })
 }
 
