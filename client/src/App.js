@@ -7,8 +7,7 @@ import Form from "./pages/Form";
 import Notfound from "./pages/Notfound";
 
 import axios from 'axios'
-axios.defaults.baseURL =
-  "http://locapi-dogs-deploy-production.up.railway.app";
+axios.defaults.baseURL = "https://pi-dogs-deploy-production.up.railway.app/";
 
 
 function App() {
